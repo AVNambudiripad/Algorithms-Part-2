@@ -1,7 +1,10 @@
 import java.util.HashSet;
 import java.util.HashMap;
 import java.util.ArrayList;
-public class Graph<Key>
+
+//Creates a Generic Graph of type Key. (Key need not be comparable)
+
+public class Graph<Key>  
 {
     private HashMap<Key,HashSet<Key>> adj; //HashMap of the Adjacent Lists of all the vertices
     private int V;
