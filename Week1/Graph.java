@@ -3,7 +3,7 @@ import java.util.HashMap;
 import java.util.ArrayList;
 public class Graph<Key>
 {
-    private HashMap<Key,HashSet<Key>> adj; //Adjacent List
+    private HashMap<Key,HashSet<Key>> adj; //HashMap of the Adjacent Lists of all the vertices
     private int V;
     private int E;
     private ArrayList<Key> ar;
@@ -37,6 +37,19 @@ public class Graph<Key>
     {
         return adj.get(vertice);
     }
+    public Integer keyToInt(Key k)  //Give the order in which the vertex was added
+    {
+        return ar.indexOf(k);
+    }
+    public Key intToKey(int i)
+    {
+        return ar.get(i);
+    }
+    public Iterable<Key> allNodes()  //Return all nodes of the graph
+    {
+        return ar;
+    }
+
 
     public void print()
     {
@@ -50,6 +63,8 @@ public class Graph<Key>
             System.out.println();
         }
     }
+
+    
 
     public static void main(String[] args)
     {
