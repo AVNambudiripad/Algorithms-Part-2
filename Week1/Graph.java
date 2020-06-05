@@ -1,12 +1,14 @@
-import java.util.HashSet;
 import java.util.HashMap;
 import java.util.ArrayList;
+
+import com.google.common.collect.HashMultiset; 
+import com.google.common.collect.Multiset; 
 
 //Creates a Generic Graph of type Key. (Key need not be comparable)
 
 public class Graph<Key>  
 {
-    private HashMap<Key,HashSet<Key>> adj; //HashMap of the Adjacent Lists of all the vertices
+    private HashMap<Key,Multiset<Key>> adj; //HashMap of the Adjacent Lists of all the vertices
     private int V;
     private int E;
     private ArrayList<Key> ar;
@@ -18,7 +20,7 @@ public class Graph<Key>
         ar=new ArrayList<Key>();
         for (int i=0;i<V;i++)
         {
-            adj.put(arr[i],new HashSet<Key>());
+            adj.put(arr[i],HashMultiset.create());
             ar.add(arr[i]);
         }
     }
@@ -27,8 +29,8 @@ public class Graph<Key>
 
     public void addEdge(Key v1,Key v2)
     {
-        HashSet<Key> h1=adj.get(v1);
-        HashSet<Key> h2=adj.get(v2);
+        Multiset<Key> h1=adj.get(v1);
+        Multiset<Key> h2=adj.get(v2);
         if (h1==null || h2==null)
         return;
         E++;
@@ -71,7 +73,7 @@ public class Graph<Key>
 
     public static void main(String[] args)
     {
-        Character[] a={'A','B','C','D','E','F','G'};
+        Character[] a={'A','B','C','D','E','F','G','H','I','J','K','L','M'};
         Graph<Character> g=new Graph<>(a);
         g.addEdge('A', 'B');
         g.addEdge('C', 'A');
@@ -82,6 +84,11 @@ public class Graph<Key>
         g.addEdge('D', 'E');
         g.addEdge('F', 'D');
         g.addEdge('B', 'A');
+        g.addEdge('H', 'I');
+        g.addEdge('J', 'H');
+        g.addEdge('H', 'K');
+        g.addEdge('J', 'K');
+        g.addEdge('L', 'M');
 
         g.print();
     }
