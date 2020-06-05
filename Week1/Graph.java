@@ -50,9 +50,13 @@ public class Graph<Key>
     {
         return ar.get(i);
     }
-    public Iterable<Key> allNodes()  //Return all nodes of the graph
+    public Iterable<Key> allNodes()  //Return all nodes of the graph in chronological order
     {
         return ar;
+    }
+    public int degree(Key k)
+    {
+        return adj.get(k).size();
     }
 
 
@@ -60,7 +64,7 @@ public class Graph<Key>
     {
         for (Key i:ar)
         {
-            System.out.print("For the vertex  "+i+"  adjacent vertices are  ");
+            System.out.print("For the vertex  "+i+"  "+keyToInt(i)+" adjacent vertices are  ");
             for (Key j: adj.get(i))
             {
                 System.out.print(j+" ");
@@ -83,12 +87,15 @@ public class Graph<Key>
         g.addEdge('E', 'F');
         g.addEdge('D', 'E');
         g.addEdge('F', 'D');
-        g.addEdge('B', 'A');
+        g.addEdge('B', 'C');
+        g.addEdge('F', 'E');
+
         g.addEdge('H', 'I');
         g.addEdge('J', 'H');
         g.addEdge('H', 'K');
         g.addEdge('J', 'K');
         g.addEdge('L', 'M');
+        g.addEdge('L', 'L');
 
         g.print();
     }

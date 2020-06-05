@@ -1,0 +1,56 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Debug (Launch) - Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-BFS<Week1_7dfa44df>",
+            "request": "launch",
+            "mainClass": "BFS",
+            "projectName": "Week1_7dfa44df"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Bipartite<Week1_7dfa44df>",
+            "request": "launch",
+            "mainClass": "Bipartite",
+            "projectName": "Week1_7dfa44df"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-CC<Week1_7dfa44df>",
+            "request": "launch",
+            "mainClass": "CC",
+            "projectName": "Week1_7dfa44df"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-DFS<Week1_7dfa44df>",
+            "request": "launch",
+            "mainClass": "DFS",
+            "projectName": "Week1_7dfa44df"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-EulerCycle<Week1_7dfa44df>",
+            "request": "launch",
+            "mainClass": "EulerCycle",
+            "projectName": "Week1_7dfa44df"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Graph<Week1_7dfa44df>",
+            "request": "launch",
+            "mainClass": "Graph",
+            "projectName": "Week1_7dfa44df"
+        }
+    ]
+}
