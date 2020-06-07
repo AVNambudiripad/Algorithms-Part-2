@@ -42,6 +42,10 @@ public class Graph<Key>
     {
         return adj.get(vertice);
     }
+    public Multiset<Key> adjacentPowerful(Key vertice)
+    {
+        return adj.get(vertice);
+    }
     public Integer keyToInt(Key k)  //Give the order in which the vertex was added
     {
         return ar.indexOf(k);

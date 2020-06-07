@@ -1,0 +1,6 @@
+{
+    "java.project.referencedLibraries": [
+        "lib/**/*.jar",
+        "/home/avn/Desktop/Algs2/Week1/Directed Graph/**/*.jar"
+    ]
+}
