@@ -49,6 +49,18 @@ public class Digraph
         }
         return s;
     }
+    public Digraph reverse() 
+    {
+        Digraph g=new Digraph(V);
+        for (int i=0;i<g.V();i++)
+        {
+            for (int j:adjacent(i))
+            {
+                g.addEdge(j, i);
+            }
+        }
+        return g;
+    }
 
 
     public static void main(String[] args)
