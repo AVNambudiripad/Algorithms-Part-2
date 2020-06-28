@@ -1,0 +1,27 @@
+#BlueJ class context
+comment0.target=BaseballElimination
+comment1.params=filename
+comment1.target=BaseballElimination(java.lang.String)
+comment10.params=i\ C\ vertex
+comment10.target=int\ convert2(int,\ int,\ int)
+comment11.params=team
+comment11.target=java.lang.Iterable\ certificateOfElimination(java.lang.String)
+comment12.params=args
+comment12.target=void\ main(java.lang.String[])
+comment2.params=
+comment2.target=int\ numberOfTeams()
+comment3.params=
+comment3.target=java.lang.Iterable\ teams()
+comment4.params=team
+comment4.target=int\ wins(java.lang.String)
+comment5.params=team
+comment5.target=int\ losses(java.lang.String)
+comment6.params=team
+comment6.target=int\ remaining(java.lang.String)
+comment7.params=team1\ team2
+comment7.target=int\ against(java.lang.String,\ java.lang.String)
+comment8.params=team
+comment8.target=boolean\ isEliminated(java.lang.String)
+comment9.params=i\ C\ team
+comment9.target=int\ convert1(int,\ int,\ int)
+numComments=13

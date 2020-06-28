@@ -1,0 +1,8 @@
+she 6
+sells 8
+sea 43
+shells 10
+on 11
+the 01
+sea 34
+shore 3

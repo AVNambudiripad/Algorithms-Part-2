@@ -1,0 +1,27 @@
+#BlueJ class context
+comment0.target=Trie
+comment1.params=
+comment1.target=Trie()
+comment10.params=
+comment10.target=java.lang.Iterable\ getKeys()
+comment11.params=q\ s\ n
+comment11.target=void\ helper(java.util.Queue,\ java.lang.String,\ Trie.Node)
+comment12.params=args
+comment12.target=void\ main(java.lang.String[])
+comment2.params=s\ v
+comment2.target=void\ put(java.lang.String,\ java.lang.Object)
+comment3.params=s\ v\ n\ d
+comment3.target=Trie.Node\ put(java.lang.String,\ java.lang.Object,\ Trie.Node,\ int)
+comment4.params=s
+comment4.target=boolean\ contains(java.lang.String)
+comment5.params=s
+comment5.target=java.lang.Object\ get(java.lang.String)
+comment6.params=s
+comment6.target=java.lang.Object\ remove(java.lang.String)
+comment7.params=n
+comment7.target=boolean\ hasChildren(Trie.Node)
+comment8.params=n\ s\ d\ b
+comment8.target=Trie.Node\ remove(Trie.Node,\ java.lang.String,\ int,\ boolean[])
+comment9.params=
+comment9.target=int\ size()
+numComments=13

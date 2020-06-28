@@ -1,0 +1,21 @@
+#BlueJ class context
+comment0.target=FlowEdge
+comment1.params=u\ v\ c
+comment1.target=FlowEdge(int,\ int,\ double)
+comment2.params=
+comment2.target=int\ from()
+comment3.params=
+comment3.target=int\ to()
+comment4.params=vertex
+comment4.target=int\ other(int)
+comment5.params=
+comment5.target=double\ flow()
+comment6.params=
+comment6.target=double\ capacity()
+comment7.params=vertex
+comment7.target=double\ residualCapacity(int)
+comment8.params=w\ delta
+comment8.target=void\ addFlow(int,\ double)
+comment9.params=
+comment9.target=java.lang.String\ toString()
+numComments=10
